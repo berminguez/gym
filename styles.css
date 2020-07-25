@@ -3,3 +3,60 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Raleway:wght@200;300;400&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+    @apply font-raleway;
+}
+
+.active {
+    border-bottom: solid 2px #d92619;
+}
+
+button.owl-prev span {
+    font-size: 100px;
+    position: absolute;
+    top: 300px;
+    color: white;
+    left: 20px;
+    opacity: 0.4;
+}
+
+button.owl-next span {
+    font-size: 100px;
+    position: absolute;
+    top: 300px;
+    color: white;
+    right: 20px;
+    opacity: 0.4;
+}
+
+.title{
+    @apply font-raleway font-black uppercase text-6xl;
+}
+
+.subtitle{
+    line-height: 10px;
+    @apply font-raleway font-light uppercase text-2xl mb-12;
+}
+
+.title::before, .subtitle::before {
+    background: url(../img/title-bgs.png) no-repeat;
+    content: "";
+    height: 191px;
+    left: -34px;
+    position: absolute;
+    top: -26px;
+    width: 189px;
+    z-index: -1;
+}
+
+.buttonsportin{
+    @apply font-raleway font-black px-16 py-4 border-2 border-sportinred border-solid rounded-full relative inline-block my-12 uppercase;
+}
+
+.hero{
+    @apply z-10 mx-16  text-white;
+    padding: 280px 0;
+}

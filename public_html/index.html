@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM</title>
-    <link rel="stylesheet" href="css/styles.css?v=2">
+    <link rel="stylesheet" href="css/styles.css?v=2.5">
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css?v=1">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.css?=1">
     <script defer src="js/fontawesome/all.min.js"></script> 
 </head>
-<body>
-    <header>
+<body class="bg-white h-auto">
+    <header class="z-50 absolute w-full">
         <div id="top-area" class="bg-sportinred hidden md:flex">
             <div class="container mx-auto">
                 <div class="phone-content sm:float-left text-white"><i class="fa fa-phone-alt"></i> <a href="tel:+349999999">123 - 1234 - 123</a></div>
@@ -23,25 +26,123 @@
                 </div>
             </div>
         </div>
-        <div class="header bg-gray-900 text-white m-0 py-4">
-            <div class="container mx-auto flex flex-wrap items-center">            
+        <div class="header bg-black text-white m-0 py-4 bg-opacity-75 z-50">
+            <div class="container mx-auto flex flex-wrap items-end">            
                     <div class="logo w-1/3">
-                        <a href=""><img src="img/logosportin.png" alt="logo sportin" ></a>
+                        <a href=""><img src="img/logosportin.png" alt="logo sportin" style="width: 123px;"></a>
                     </div>
                     <div id="menu-container" class="w-2/3">
                         <a href="#" class="md:hidden float-right mx-4 text-2xl"><i class="fas fa-bars"></i></a>
                         <ul class="menu-list float-right hidden md:block">
-                            <li class="float-left mx-2 lg:mx-4"><a href="">Home</a></li>
-                            <li class="float-left mx-2 lg:mx-4"><a href="">About us</a></li>
-                            <li class="float-left mx-2 lg:mx-4"><a href="">Courses</a></li>
-                            <li class="float-left mx-2 lg:mx-4"><a href="">Shedule</a></li>
-                            <li class="float-left mx-2 lg:mx-4"><a href="">Blog</a></li>
-                            <li class="float-left mx-2 lg:mx-4"><a href="">Contact us</a></li>
-                            <li class="float-left mx-2 lg:mx-4"><a href=""><i class="fa fa-search"></i></a></li>
+                            <li class="float-left mx-2 lg:mx-4 text-md pb-4 uppercase active"><a href="">Home</a></li>
+                            <li class="float-left mx-2 lg:mx-4 text-md pb-4 uppercase"><a href="">About us</a></li>
+                            <li class="float-left mx-2 lg:mx-4 text-md pb-4 uppercase"><a href="">Courses</a></li>
+                            <li class="float-left mx-2 lg:mx-4 text-md pb-4 uppercase"><a href="">Schedule</a></li>
+                            <li class="float-left mx-2 lg:mx-4 text-md pb-4 uppercase"><a href="">Blog</a></li>
+                            <li class="float-left mx-2 lg:mx-4 text-md pb-4 uppercase"><a href="">Contact us</a></li>
+                            <li class="float-left mx-2 lg:mx-4 text-md pb-4 uppercase"><a href=""><i class="fa fa-search"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
     </header>
+
+
+        <div class="owl-carousel owl-theme w-full z-10 relative sm:absolute" style="">
+                <div class="slide w-full m-0">
+                    <div class="absolute m-0 w-full bg-center" style="background-image: url(img/bg2.jpg); height: 964px; z-index: -100;"></div>
+                    <div class="absolute m-0 w-full bg-center bg-opacity-25 bg-black" style="height: 964px; z-index: -50;"></div>
+                    <div class="hero md:w-1/2 md:px-12">
+                        <h2 class="uppercase text-5xl font-roboto font-bold">Lo más importante</h2>
+                        <h3 class="font-raleway text-3xl uppercase font-light">Eres tú</h3>
+                        <p class="py-4">En sport.in estamos muy orgullosos de contar con un equipo técnico amplio y cualificado que te podrá prestar la atención que necesites.</p>
+                        
+                    </div>
+                </div>
+                <div class="slide w-full m-0">
+                    <div class="absolute m-0 w-full bg-center" style="background-image: url(img/bg1.jpg); height: 964px; z-index: -100;"></div>
+                    <div class="hero z-10 py-32 container w-full m-auto text-white">
+                        <h2 class="uppercase text-5xl font-roboto font-bold">Fitness Complex Gym</h2>
+                        <h3 class="font-raleway text-3xl uppercase font-light">For Athletic Women</h3>
+                        <h5 class="uppercase text-lg italic mt-2"><a href="">Read more<i class="fas fa-long-arrow-alt-right ml-2 text-md not-italic"></i></a></h5>
+                    </div>
+                </div>
+                <div class="slide w-full m-0">
+                    <div class="absolute m-0 w-full bg-center" style="background-image: url(img/bg3.jpg); height: 964px; z-index: -100;"></div>
+                    <div class="hero z-10 py-32 container w-full m-auto text-white">
+                        <h2 class="uppercase text-5xl font-roboto font-bold">Fitness Complex Gym</h2>
+                        <h3 class="font-raleway text-3xl uppercase font-light">For Athletic Women</h3>
+                        <h5 class="uppercase text-2xl"><a href="">Read more<i class="fas fa-arrow-right"></i></a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="About" class="container relative mx-auto grid grid-cols-1 md:grid-cols-2 my-8 md:my-32">
+            <div class="relative flex flex-no-wrap container mx-auto">
+                <div class="inline-block"><img src="img/abt1.png"></div>
+                <div class="inline-block m-3"><img src="img/abt2.png"></div>
+            </div>
+            <div class="relative container mx-auto">
+                <h2 class="title">Sport.in</h2>
+                <h3 class="subtitle lg:text-4xl lg:mb-24">Sobre Nosotros</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nulla doloremque, suscipit cupiditate iure labore commodi magnam ipsa harum consequuntur at. Eligendi minus ipsa ab enim officiis fugit atque error alias, voluptatem fuga sequi temporibus laudantium voluptatum animi iusto consequatur nemo architecto numquam! Cum sit asperiores ea ullam laboriosam dignissimos.</p>
+                <a class="buttonsportin">Leer más</a>
+            </div>  
+        </section>
+
+        <section id="whychoose" class="bg-center bg-sportingray">
+            <div class="container relative mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-8 md:py-24">
+                    
+     
+                    <div class="text-center px-4 py-6">
+                         <i class="fas fa-dumbbell text-sportinred text-6xl" ></i>
+                        <h3 class="text-white text-lg font-roboto uppercase my-6 font-bold">2 Gimnasios</h3>
+                        <p class="text-gray-400 font-normal">En tu localidad, inscribete en uno y podrás ir a los dos cuando tu quieras.</p>
+                    </div>
+
+                    <div class="text-center px-4 py-6">
+                        <i class="fas fa-cocktail text-sportinred text-6xl" ></i>
+                       <h3 class="text-white text-lg font-roboto uppercase my-6 font-bold">Spa</h3>
+                       <p class="text-gray-400 font-normal">Seguro que en algún momento después de un duro entrenamiento te apetece relajarte en nuestros Spas.</p>
+                   </div>
+
+                   <div class="text-center px-4 py-6">
+                        <i class="fas fa-carrot text-sportinred text-6xl" ></i>
+                        <h3 class="text-white text-lg font-roboto uppercase my-6 font-bold">Nutrición</h3>
+                        <p class="text-gray-400 font-normal">Nutrición integrada en tu protocolo de entrenamiento. Ejercicio + alimentación = resultado.</p>
+                    </div>
+
+                    <div class="text-center px-4 py-6">
+                        <i class="fas fa-mobile-alt text-sportinred text-6xl" ></i>
+                        <h3 class="text-white text-lg font-roboto uppercase my-6 font-bold">App</h3>
+                        <p class="text-gray-400 font-normal">A través de nuestra APP realizaremos una evolución corporal y te asignaremos una rutina adaptada a tus objetivos y medimos los resultados.</p>
+                    </div>
+                  
+
+            </div>
+        </section>
+
+        <section id="gimnasios" class="container relative mx-auto py-24 md:py32 lg:py64">
+            <div class="w-1/2 relative float-right">
+                <h2 class="title">GIMNASIOS</h2>
+                <h3 class="subtitle">en Torrevieja</h3>
+                <p>Con tu cuenta en Sport.in puedes acceder a todos nuestros gimnasios cuando te apetezca.</p>
+            </div>
+            <div class="relative clearfix clear-right grid grid-cols-2 gap-6 py-12">
+                <div class="">
+                    <img src="img/sportintorrevieja.jpg">
+                </div>
+                <div class="">
+                    <img src="img/sportinpuntaprima.jpg">
+                </div>
+            </div>
+
+        </section>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/sportin.js"></script>
 </body>
 </html>
