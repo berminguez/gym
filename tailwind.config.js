@@ -1,7 +1,11 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        sportinred: '#d92619',
+      },
+    },
   },
   variants: {},
   plugins: [],

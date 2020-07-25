@@ -1,0 +1,231 @@
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1169px) {
+    .menu ul li a {
+        padding: 5px 11px 6px;
+        font-size: 14px;
+    }
+    .home-2 .nivo-controlNav {
+        bottom: 49%;
+    }
+    .team_social a i {
+        margin: 0px;
+    }
+    .blog_social .item {
+        padding-right: 19px;
+    }
+    .nivo-controlNav {
+        top: 30%;
+    }
+}
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mean-container .mean-bar {
+        background: #FF5E00;
+    }
+    .nivo-controlNav {
+        top: 27%;
+    }
+    .cap-title h2 span {
+        display: inline-block;
+        font-size: 22px;
+    }
+    .cap-title h3 span {
+        font-size: 30px;
+    }
+    .menu ul li a {
+        padding: 0 4px;
+        font-size: 12px;
+    }
+    .single_about {
+        margin-bottom: 15px;
+    }
+    .home-2 .nivo-controlNav {
+        bottom: 57%;
+        right: 10%;
+    }
+    .single_counter {
+        padding-bottom: 30px;
+    }
+    .blog_social .item {
+        padding-right: 44px;
+    }
+    .home-3.nav_area {
+        padding: 0;
+    }
+    .home-3 .prot_wrap .col-md-3 {
+        padding: 0;
+    }
+}
+/* small mobile :320px. */
+
+@media (max-width: 767px) {
+    .container {
+        width: 300px
+    }
+    .mean-container .mean-bar {
+        background: #FF5E00;
+    }
+    .header_top p span,
+    .header_top p a {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .header_top ul.social-icons {
+        text-align: center;
+    }
+    .nav_area {
+        padding: 0;
+    }
+    /*.slide1-text {
+  margin-top: 0px;
+}
+.margin_left {
+  margin-left: 40px;
+}
+.cap-title h2 {
+  margin-bottom: 0;
+}*/
+    
+    .margin_left {
+        margin-left: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .cap-title h2 span {
+        display: inline-block;
+        font-size: 17px;
+    }
+    .cap-title h3 span {
+        font-size: 20px;
+    }
+    .cap-dec {
+        display: none;
+    }
+    .smore {
+        display: none;
+    }
+    .section_title > p {
+        width: 100%;
+    }
+    .single_about {
+        margin-bottom: 15px;
+    }
+    .portfolio_nav ul li {
+        display: block;
+    }
+    .f_middle p {
+        width: 90%;
+    }
+    .nivo-controlNav {
+        margin-top: -21px;
+        position: absolute;
+        right: 7%;
+        text-align: center;
+        top: 30%;
+        width: 14px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        z-index: 9999;
+    }
+    .cap-dec p {
+        font-size: 12px;
+    }
+    .copy_right p {
+        text-align: center;
+    }
+    .f_menu ul {
+        text-align: center;
+    }
+    /*home-2 responsive*/
+    
+    .home-2 .nivo-controlNav {
+        bottom: 65%;
+        right: 15%;
+    }
+    .prot_wrap .col-md-3 {
+        padding: 0 15px;
+        width: 100%;
+    }
+    .prot_thumb > img {
+        width: 100%;
+    }
+    .home-2 .field.topfield .form-field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .blog_social .item {
+        padding-right: 0;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .blog_post_comment h2 {
+        font-size: 21px;
+    }
+    .logo_name.colorr {
+        font-size: 58px;
+        letter-spacing: 2px;
+    }
+    .text_slider p {
+        font-size: 15px;
+        padding: 0;
+        line-height: 25px;
+    }
+    .work-button {
+        margin-top: 20px;
+    }
+    .home-3.nav_area {
+        padding: 0;
+    }
+}
+/* Large Mobile :480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 450px
+    }
+    .header_top p span,
+    .header_top p a {
+        display: inline-block;
+        margin-right: 9px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .header_top ul.social-icons {
+        text-align: center;
+    }
+    .nivo-controlNav {
+        top: 25%;
+    }
+    .home-2 .nivo-controlNav {
+        bottom: 70%;
+        right: 15%;
+    }
+    .cap-title h2 span {
+        margin-top: 5px;
+    }
+    .cap-dec {
+        display: block;
+    }
+    .team_social a i {
+        height: 28px;
+        margin: 0;
+        width: 28px;
+        line-height: 26px;
+        padding-top: 0px;
+    }
+    .home-2 .cap-dec {
+        display: none;
+    }
+    .home-2 .blog_content h3 {
+        font-size: 13px;
+    }
+    .home-2.header_top p span,
+    .home-2.header_top p a {
+        margin-right: 7px;
+    }
+}

@@ -1,0 +1,332 @@
+/*====================
+	Theme Name: NetBizz
+	Author: Netizenstech
+===============================*/
+/* index css 
+
+* Header Area css
+* Nav Area css
+* Slider Area css
+* About Area css
+* Skill Area css
+* Team Area css
+* Portfolio Area css
+* Service Area css
+* Client Area css
+* Blog Area css
+* Fun Area css
+* Footer Area css
+
+*/
+/* google font 
+
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Dancing Script', cursive;
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i';
+html,
+body {
+    height: 100%;
+}
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+.floatleft {
+    float: left
+}
+/* 323b48 */
+
+.floatright {
+    float: right
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px
+}
+.alignright {
+    float: r ight;
+    margin-left: 15px;
+    margin-bottom: 15px
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px
+}
+a:focus {
+    outline: 0px solid;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto
+}
+.fix {
+    overflow: hidden
+}
+p {
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 18px;
+}
+a {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+}
+a:hover {
+    color: #FF5E00;
+    text-decoration: none;
+}
+a:active,
+a:hover {
+    outline: 0 none;
+    text-decoration: none;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+ul,
+ol,
+li {
+    list-style: outside none none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+ul > li > a {
+    color: #FF5E00;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+.pd0 {
+    padding: 0px;
+}
+.clear {
+    clear: both
+}
+.title-section h1 {
+    color: #222222;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+/*header top css*/
+
+.header_top {
+    padding: 10px 0;
+    background: #f8f8f8;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+.header_top p {
+    margin-bottom: 0;
+}
+.header_top p span,
+.header_top p a {
+    margin-right: 20px;
+}
+.header_top p span i,
+.header_top p a i {
+    font-size: 13px;
+    color: #FF5E00;
+    margin-right: 10px;
+}
+.header_top p a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    color: #666666;
+}
+.header_top ul.social-icons {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.header_top ul.social-icons li {
+    display: inline-block;
+    margin-left: 9px;
+}
+.header_top ul.social-icons li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    font-size: 14px;
+    color: #666666;
+}
+.social-icons li a i:hover {
+    color: #FF5E00;
+}
+/*============
+header nav css
+=============*/
+
+.nav_areas {
+    z-index: 9999999;
+}
+.nav_area {
+    background: #fff none repeat scroll 0 0;
+    padding: 20px 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.logo {} .logo a {} .logo img {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.menu {} .menu ul {
+    text-align: right;
+    margin: 5px 0;
+}
+.menu ul li {
+    display: inline;
+}
+.menu ul li.active a {
+    color: #FF5E00;
+}
+.menu ul li a {
+    display: inline-block;
+    padding: 5px 14px 6px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+	color:#333;
+}
+.menu ul li:last-child a {
+    padding-right: 0px;
+}
+.menu ul li a:hover {
+    color: #FF5E00;
+}
+.menu ul li a:before {
+    background: transparent;
+    border-color: transparent transparent #FF5E00 transparent;
+    border-style: solid;
+    border-width: 6px;
+    bottom: -35px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.menu ul li a:hover:before {
+    bottom: -5px;
+    content: "";
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.menu .current > a {
+    color: #FF5E00;
+}
+.bgcolor_stick {} .postfix {
+    background: #fff;
+}
+.prefix {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0px 1px 5px #ddd;
+}
+
+
+.doc {
+	padding: 25px 0;
+	background: #333;
+	color: #fff;
+}
+.doc p{
+	color: #fff;
+}
+
+
+
+.doc_body{}
+.doc_body h3{}
+.doc_body h3 {
+	font-size: 30px;
+	color: #444;
+	margin-top: 100px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 18px;
+}
+.doc_body h6{
+	font-size:20px;
+	margin-bottom:0px;
+}
+.fl ul{
+	margin-left:50px;
+	margin-bottom:30px;
+}
+
+
+.footer_buttom {
+	padding: 30px 0;
+	background: #111;
+	color:#fff;
+}
+.footer_buttom p,
+.footer_buttom a{
+	color:#fff;
+}
+
+
+
+.logo a {
+	font-size: 25px;
+	color: #333;
+	font-weight:700;
+}
+
+
+
+
+
