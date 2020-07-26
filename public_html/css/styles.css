@@ -18113,8 +18113,18 @@ body{
   font-family: Raleway, serif;
 }
 
-.active {
+.activemenu, .menu-list li:hover {
   border-bottom: solid 2px #d92619;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + #content {
+  padding-top: 102px;
 }
 
 button.owl-prev span {
@@ -18176,20 +18186,49 @@ button.owl-next span {
   border-style: solid;
   border-radius: 9999px;
   position: relative;
-  display: inline-block;
+  display: block;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   text-transform: uppercase;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 500ms;
+}
+
+.buttonsportin:hover {
+  --bg-opacity: 1;
+  background-color: #d92619;
+  background-color: rgba(217, 38, 25, var(--bg-opacity));
+  --border-opacity: 1;
+  border-color: #d92619;
+  border-color: rgba(217, 38, 25, var(--border-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
 }
 
 .hero{
   z-index: 10;
-  margin-left: 4rem;
-  margin-right: 4rem;
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
   padding: 280px 0;
+}
+
+.modal {
+  transition: opacity 0.25s ease;
+}
+
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 40px !important;
 }
 
 @media (min-width: 640px) {

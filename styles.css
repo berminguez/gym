@@ -10,9 +10,19 @@ body{
     @apply font-raleway;
 }
 
-.active {
+.activemenu, .menu-list li:hover {
     border-bottom: solid 2px #d92619;
 }
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + #content {
+    padding-top: 102px;
+  }
 
 button.owl-prev span {
     font-size: 100px;
@@ -52,11 +62,31 @@ button.owl-next span {
     z-index: -1;
 }
 
+
+
 .buttonsportin{
-    @apply font-raleway font-black px-16 py-4 border-2 border-sportinred border-solid rounded-full relative inline-block my-12 uppercase;
+    @apply font-raleway font-black px-16 py-4 border-2 border-sportinred border-solid rounded-full relative block my-12 mx-auto text-center uppercase transition ease-in duration-500;
+}
+
+
+
+.buttonsportin:hover {
+    @apply bg-sportinred border-sportinred text-white;
 }
 
 .hero{
-    @apply z-10 mx-16  text-white;
+    @apply z-10 text-white;
     padding: 280px 0;
+}
+
+.modal {
+    transition: opacity 0.25s ease;
+  }
+  body.modal-active {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+  }
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 40px !important;
 }
