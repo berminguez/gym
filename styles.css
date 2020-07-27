@@ -3,9 +3,9 @@
 @tailwind components;
 
 @tailwind utilities;
-
+/*
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Raleway:wght@200;300;400&family=Roboto:wght@300;400;500;700;900&display=swap');
-
+*/
 body{
     @apply font-raleway;
 }
@@ -43,26 +43,66 @@ button.owl-next span {
 }
 
 .title{
-    @apply font-raleway font-black uppercase text-6xl;
+    @apply font-raleway font-black uppercase text-3xl;
 }
-
 .subtitle{
-    line-height: 10px;
+    line-height: 24px;
     @apply font-raleway font-light uppercase text-2xl mb-12;
 }
 
-.title::before, .subtitle::before {
-    background: url(../img/title-bgs.png) no-repeat;
+.title::before {
+    background: url(../img/title-bgs-1.png) no-repeat;
     content: "";
-    height: 191px;
-    left: -34px;
+    height: 102px;
+    left: -20px;
     position: absolute;
-    top: -26px;
-    width: 189px;
+    top: -15px;
+    width: 100px;
     z-index: -1;
 }
 
+/* Small (sm) */
+@media (min-width: 640px) { /* ... */ }
 
+/* Medium (md) */
+@media (min-width: 768px) { 
+    .title{
+        @apply text-4xl;
+    }
+    .title::before {
+        background: url(../img/title-bgs-1.png) no-repeat;
+        content: "";
+        height: 102px;
+        left: -20px;
+        position: absolute;
+        top: -15px;
+        width: 100px;
+        z-index: -1;
+    }
+ }
+
+/* Large (lg) */
+@media (min-width: 1024px) { 
+    .title{
+        @apply text-6xl;
+    }
+    .title::before {
+        background: url(../img/title-bgs.png) no-repeat;
+        content: "";
+        height: 191px;
+        left: -24px;
+        position: absolute;
+        top: -47px;
+        width: 189px;
+        z-index: -1;
+    }
+
+
+
+ }
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {  }
 
 .buttonsportin{
     @apply font-raleway font-black px-16 py-4 border-2 border-sportinred border-solid rounded-full relative block my-12 mx-auto text-center uppercase transition ease-in duration-500;
@@ -76,7 +116,6 @@ button.owl-next span {
 
 .hero{
     @apply z-10 text-white;
-    padding: 280px 0;
 }
 
 .modal {
